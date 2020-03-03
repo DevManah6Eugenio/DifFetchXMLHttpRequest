@@ -1,18 +1,13 @@
-function buscar() {
+function buscarFetch() {
 
- const getData = async () => {
-     const url = document.querySelector('#url').value;
-     select = document.querySelector('#verbo-http');
-     method = select.value
+let url = document.querySelector('#url').value;
+let metodo = document.querySelector('#metodo-http').value;
+let textExibirResult = document.querySelector('#result');
 
-     if(url.value) {
-         code.innerHTML = await fetch(url.value, { method :  method })
-             .then(res => res.text())
-             .catch(error => error)
-     } else {
-        console.log('deu erro');
-     }
- }
-
- getData();
+//chamada do fetch
+    fetch(url, {method: metodo })
+    .then(response => console.log(response)
+    ).catch(error => console.log(error));
 }
+
+//document.querySelector('#button-pesquisar').addEventListener("click", buscarFetch, false);
