@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste</title>
+    <link rel="stylesheet" type="text/css" href="bulma-0.8.0\css\bulma.css" />
+    <script type="text/javascript" src="js/json.js"></script>
+</head>
+<body>
+<div class="">
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Teste Requisição Json
+                </h1>
+            </div>
+        </div>
+    </section>
+<div class="field is-horizontal">
+    <div class="control">
+        <div class="select">
+            <select id="verbo-http">
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+        </div>
+    </div>
+    <div class="field-body">
+        <div class="field">
+            <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Name" id="url">
+                <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+            </p>
+        </div>
+    </div>
+</div>
+    <div class="field is-grouped is-grouped-right">
+        <p class="control">
+            <a class="button is-primary" onclick="buscar()">
+                Submit
+            </a>
+        </p>
+    </div>
+    <textarea class="textarea" placeholder="resposta" rows="10"></textarea>
+</div>
+</body>
+</html>
